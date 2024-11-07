@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/medicationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!--    Medication Section-->
+        <LinearLayout
+            android:id="@+id/medicationSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/medication_title"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="I WILL REMIND YOU"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:required="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/medication_et"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tab_shape"
+                android:hint="Medication Name i.e. Panadol"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:required="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/dosageDescription_et"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tab_shape"
+                android:hint="Dosage/Description i.e. 1 pill after meal, daily"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--    Shapes Section-->
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/shapesLayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:background="@drawable/box_shape"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/shapeSelection"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="25dp"-->
+        <!--                android:layout_marginLeft="20dp"-->
+        <!--                android:layout_marginRight="20dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:hint="Shapes"-->
+        <!--                android:paddingLeft="5dp"-->
+        <!--                android:required="true"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <HorizontalScrollView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:scrollbars="horizontal">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:id="@+id/shapePics"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginLeft="20dp"-->
+        <!--                    android:layout_marginRight="20dp"-->
+        <!--                    android:orientation="horizontal">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        android:layout_marginLeft="5dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginRight="40dp"-->
+        <!--                        android:layout_marginBottom="10dp"-->
+        <!--                        android:background="@drawable/tab_shape"-->
+        <!--                        android:src="@drawable/add_icon" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </HorizontalScrollView>-->
+
+        <!--        </LinearLayout>-->
+
+        <!--    Reminder Days-->
+        <LinearLayout
+            android:id="@+id/daySelectionSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/daySelection_title"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Select Day(s)"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:required="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/alarmDaysSpinner"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:entries="@array/daysSpinner" />-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/dailyLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/alarmDate_tvv"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_marginLeft="20dp"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:layout_marginRight="5dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@drawable/tab_shape"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="Start From:"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/alarmDate_ett"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_marginLeft="5dp"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:layout_marginRight="20dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@drawable/tab_shape"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:hint="01-01-2020"-->
+            <!--                    android:inputType="date"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/noDaysLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/alarmDate_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="Start Date:"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/alarmDate_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:hint="01-01-2020"
+                        android:inputType="date"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/subtract_button"
+                            android:contentDescription="Button to less alarm days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/tab_shape"
+                            android:enabled="false"
+                            android:src="@drawable/remove_icon" />
+
+                        <TextView
+                            android:id="@+id/numbOfDays_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/plus_button"
+                            android:contentDescription="Button to increase alarm days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/tab_shape"
+                            android:src="@drawable/add_icon" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/specificDaysLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/mondayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="M" />-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/tuesdayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="T" />-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/wednesdayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="W" />-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/thursdayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="T" />-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/fridayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="F" />-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/saturdayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="S" />-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/sundayCheckBox"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="S" />-->
+
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+        <!--    Reminder Times-->
+        <LinearLayout
+            android:id="@+id/timeSelectionSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeSelection_title"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Select Time(s)"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:required="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/alarmTimesSpinner"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginRight="20dp"-->
+            <!--                android:entries="@array/timesSpinner" />-->
+
+            <LinearLayout
+                android:id="@+id/addTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/addFirTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/alarmTime_tv1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="Alarm Time:"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/alarmTime_et1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="09 : 00 AM"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/add_time_btn"
+                        android:contentDescription="Button to Add/Remove Alarm Times"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_shape"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:src="@drawable/add_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addSecTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/alarmTime_tv2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="Alarm Time:"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/alarmTime_et2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="02 : 00 PM"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/remove_time_btn1"
+                        android:contentDescription="Button to Add/Remove Alarm Times"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_shape"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:src="@drawable/remove_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addThiTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/alarmTime_tv3"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="Alarm Time:"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/alarmTime_et3"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/tab_shape"
+                        android:gravity="center"
+                        android:text="09 : 00 PM"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/remove_time_btn2"
+                        android:contentDescription="Button to Add/Remove Alarm Times"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tab_shape"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:src="@drawable/remove_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/onceADay"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_marginLeft="20dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginRight="5dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@drawable/tab_shape"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="Alarm Time:"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_marginLeft="5dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginRight="20dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@drawable/tab_shape"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="09 : 00 AM"-->
+            <!--                    android:textSize="15sp"-->
+            <!--                    android:textStyle="bold" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/twiceADay"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="20dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="5dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="Alarm Time:"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="20dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="09 : 00 AM"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="20dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="5dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="Alarm Time:"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="20dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="09 : 00 AM"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/threeTimesADay"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="20dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="5dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="Alarm Time:"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="20dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="09 : 00 AM"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="20dp"-->
+            <!--                        android:layout_marginRight="5dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="Alarm Time:"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:layout_marginRight="20dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="09 : 00 AM"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="20dp"-->
+            <!--                        android:layout_marginRight="5dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="Alarm Time:"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_marginLeft="5dp"-->
+            <!--                        android:layout_marginRight="20dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/tab_shape"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="09 : 00 AM"-->
+            <!--                        android:textSize="15sp"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+        <!--    Reminder Type-->
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/alarmTypeLayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:background="@drawable/box_shape"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/typeSelection"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="25dp"-->
+        <!--                android:layout_marginLeft="20dp"-->
+        <!--                android:layout_marginRight="20dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:hint="Alarm / Notification"-->
+        <!--                android:inputType="text"-->
+        <!--                android:paddingLeft="5dp"-->
+        <!--                android:required="true"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/selectAlarmTypeLayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginLeft="20dp"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:layout_marginRight="20dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:background="@drawable/tab_shape"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <RadioGroup-->
+        <!--                    android:id="@+id/typeRadioGroup"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:orientation="horizontal">-->
+
+        <!--                    <RadioButton-->
+        <!--                        android:id="@+id/notificationRadioButton"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_weight="1"-->
+        <!--                        android:text="Notification" />-->
+
+        <!--                    <RadioButton-->
+        <!--                        android:id="@+id/alarmRadioButton"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_weight="1"-->
+        <!--                        android:text="Alarm" />-->
+        <!--                </RadioGroup>-->
+        <!--            </LinearLayout>-->
+
+        <!--        </LinearLayout>-->
+
+        <Button
+            android:id="@+id/saveReminder"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tab_shape"
+            android:clickable="true"
+            android:text="Save Reminder"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorAccent" />
+    </LinearLayout>
+</ScrollView>

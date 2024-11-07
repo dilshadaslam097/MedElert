@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MedElert</string>
+    <string name="already_have_an_account">OR have account? <font color='#6F42C1'>Login</font></string>
+    <string name="forget_password"><font color='#6F42C1'>Forget Password?</font></string>
+    <string name="or_create_new_account">OR <font color='#6F42C1'>Create New Account !</font></string>
+    <string name="create_new_account">New User? <font color='#6F42C1'>Sign Up</font></string>
+    <string name="existing_account">Existing Account? <font color='#6F42C1'>Get Started</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+
+</resources>

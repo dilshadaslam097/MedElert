@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group4">
+        <item android:id="@+id/nav_updateProfile"
+            android:icon="@drawable/update_profile"
+            android:title="Update Profile" />
+
+        <item android:id="@+id/nav_changePassword"
+            android:icon="@drawable/confirm_password"
+            android:title="Change Password" />
+    </group>
+
+    <group
+        android:id="@+id/group5">
+        <item android:id="@+id/nav_deleteAccount"
+            android:icon="@drawable/delete_ic"
+            android:title="Delete Account" />
+
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout" />
+    </group>
+    <group
+        android:id="@+id/group6">
+        <item android:id="@+id/nav_share"
+            android:icon="@drawable/share_img"
+            android:title="Share"
+            />
+    </group>
+
+
+</menu>

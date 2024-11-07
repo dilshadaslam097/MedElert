@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".basics.SignupActivity">
+
+
+        <ImageView
+            android:id="@+id/signup_img"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/signup_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nullView"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/signupCNIC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_img" />
+
+        <EditText
+            android:id="@+id/signupCNIC"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tab_shape"
+            android:drawableLeft="@drawable/identity_pkg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="CNIC Number"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/signupName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/signupName"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tab_shape"
+            android:drawableLeft="@drawable/name_icon"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:paddingLeft="4dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/signupPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/signupPassword"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tab_shape"
+            android:drawableLeft="@drawable/lock_pkg"
+            android:drawableRight="@drawable/ic_visibility_off"
+            android:onClick="togglePasswordVisibility"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/age_disease_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/togglePasswordVisibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_visibility_off"
+            android:paddingRight="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/signupPassword"
+            app:layout_constraintTop_toTopOf="@+id/signupPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/signupPassword" />
+
+        <LinearLayout
+            android:id="@+id/age_disease_layout"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/signupButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/signupAge"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_shape"
+                android:drawableLeft="@drawable/age_icon"
+                android:drawablePadding="4dp"
+                android:ems="3"
+                android:gravity="center_vertical|start"
+                android:hint="Age"
+                android:inputType="number"
+                android:paddingLeft="4dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/signupDisease"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/tab_shape"
+                android:drawableLeft="@drawable/sick_icon"
+                android:drawablePadding="4dp"
+                android:ems="10"
+                android:gravity="center_vertical|start"
+                android:hint="Disease"
+                android:inputType="text"
+                android:paddingLeft="4dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tab_shape"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/loginRedirectText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/loginRedirectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical|start"
+            android:text="@string/already_have_an_account"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

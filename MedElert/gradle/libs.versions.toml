@@ -1,0 +1,50 @@
+[versions]
+agp = "8.5.0"
+kotlin = "1.8.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.7.0"
+constraintlayout = "2.1.4"
+databindingCompiler = "8.7.0"
+roomCommon = "2.6.1"
+roomCommonJvm = "2.7.0-alpha09"
+roomCompiler = "2.6.1"
+daggerHilt = "2.44"
+places = "4.0.0"
+threetenbp = "1.3.1"
+
+
+[libraries]
+androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version = "1.2.0" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-databinding-compiler = { group = "androidx.databinding", name = "databinding-compiler", version.ref = "databindingCompiler" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+androidx-room-common-jvm = { group = "androidx.room", name = "room-common-jvm", version.ref = "roomCommonJvm" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+hilt_android = { module = "com.google.dagger:hilt-android", version.ref = "daggerHilt" }
+hilt_compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "daggerHilt" }
+threeten_bp = { module = "org.threeten.bp:threeten-bp", version.ref = "threetenbp" }
+androidx-work-runtime-ktx = "androidx.work:work-runtime-ktx:2.7.1"
+
+#room-database
+room = { module = "androidx.room:room-runtime", version = "2.6.1" }
+room-ktx = { module = "androidx.room:room-ktx", version = "2.6.1" }
+room-compiler = { module = "androidx.room:room-compiler", version = "2.6.1" }
+places = { group = "com.google.android.libraries.places", name = "places", version.ref = "places" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

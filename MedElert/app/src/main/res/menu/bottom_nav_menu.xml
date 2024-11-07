@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_active"
+        android:icon="@drawable/alarm_icon"
+        android:title="Alarms" />
+    <item
+        android:id="@+id/navigation_all_active"
+        android:icon="@drawable/notification_icon"
+        android:title="Active" />
+    <item
+        android:id="@+id/navigation_missed"
+        android:icon="@drawable/missed_alarm"
+        android:title="Missed" />
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/taken_icon"
+        android:title="Taken" />
+
+</menu>

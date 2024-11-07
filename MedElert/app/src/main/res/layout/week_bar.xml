@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/week_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/mondayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/tab_shape"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="M" />
+
+        <TextView
+            android:id="@+id/dateMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tuesdayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="T" />
+
+        <TextView
+            android:id="@+id/dateTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wednesdayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="W" />
+
+        <TextView
+            android:id="@+id/dateWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thursdayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="T" />
+
+        <TextView
+            android:id="@+id/dateThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fridayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="F" />
+
+        <TextView
+            android:id="@+id/dateFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/saturdayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="S" />
+
+        <TextView
+            android:id="@+id/dateSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sundayFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="S" />
+
+        <TextView
+            android:id="@+id/dateSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calenderFrame"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/tab_shape"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/calender_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/calender_icon"
+            android:text="IMG" />
+
+    </LinearLayout>
+
+</LinearLayout>

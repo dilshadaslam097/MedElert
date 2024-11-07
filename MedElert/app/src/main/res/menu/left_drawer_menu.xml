@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_notification"
+            android:icon="@drawable/lock_pkg"
+            android:title="Notification" />
+
+        <item android:id="@+id/nav_theme"
+            android:icon="@drawable/lock_pkg"
+            android:title="Theme" />
+
+        <item android:id="@+id/nav_backup"
+            android:icon="@drawable/lock_pkg"
+            android:title="Backup" />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item android:id="@+id/nav_feedback"
+            android:icon="@drawable/lock_pkg"
+            android:title="Feedback" />
+
+        <item android:id="@+id/nav_contactUs"
+            android:icon="@drawable/lock_pkg"
+            android:title="Contact us" />
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item android:id="@+id/nav_rating"
+            android:icon="@drawable/lock_pkg"
+            android:title="Rate us" />
+
+        <item android:id="@+id/nav_share"
+            android:icon="@drawable/share_img"
+            android:title="Share"
+            />
+    </group>
+
+</menu>
